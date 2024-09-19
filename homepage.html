@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-3 bg-white">
+                    <div class="flex justify-center">
+                        <div class="stats bg-orange-500 text-primary-content">
+                            <div class="stat">
+                                <div class="stat-title text-black font-bold">Account balance</div>
+                                <div class="stat-value text-slate-700">$89,400</div>
+                                <div class="stat-actions">
+                                    <button class="btn btn-sm btn-success bg-orange-400 border-none text-white font-bold">Add funds</button>
+                                </div>
+                            </div>
+
+                            <div class="stat">
+                                <div class="stat-title text-black font-bold ">Current balance</div>
+                                <div class="stat-value text-slate-700">$ <span id="Amount">80000</span> </div>
+                                <div class="stat-actions">
+                                    <button class="btn btn-sm font-bold" id="btnWithdrawl">Withdrawal</button>
+                                    <button class="btn btn-sm font-bold" id="btnDeposit">Deposit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider divider-neutral"></div>
+
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Enter Amount</span>
+                                </label>
+                                <input id="withdrawAmount" type="text" placeholder="Enter Withdraw Amount" class="input input-bordered"
+                                    required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin</span>
+                                </label>
+                                <input id="withdrawPin" type="password" placeholder="Enter 4-digit pin" class="input input-bordered"
+                                    autocomplete="off" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="btnWithdraw" class="btn btn-primary bg-orange-500 border-none text-white font-bold text-xl">Withdraw</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="./js/transaction.js"></script>
+</body>
+
+</html>
