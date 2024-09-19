@@ -14,8 +14,11 @@ document
         }
         else {
             let updatedAmount = amount - withdrawAmount;
-            withdrawAmountFiled.innerText = updatedAmount;
+            amountField.innerText = updatedAmount;
         }
+    }
+    else {
+        alert('Invalid Pin');
     }
     
   });
